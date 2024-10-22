@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* !! Don't include in Shopify CSS | START !! */
+h1, h2, h3, h4, h5, h6, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, small {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+form .placeholder {
+    margin: 0 auto;
+}
+
+.form-item {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-item label {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: #9c9c9c;
+}
+
+form .form-item input {
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 3px solid #A9A8A9;
+    background-color: #EDEDED;
+}
+/* !! Don't include in Shopify CSS | END !! */
+
+
+
+/* Utility Classes | START */
+
+.section-spacer {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.content-container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding:  0 1rem;
+    width: min(100%, 100rem);
+    text-align: center;
+}
+
+.section-container-black {
+    background-color: #1b1b1b;
+    color: #ffffff; 
+}
+
+.section-container-gray-100 {
+    background-color: #F0F0F0;
+    color: #1b1b1b; 
+}
+.section-container-gray-200 {
+    background-color: #EDEDED;
+    color: #1b1b1b; 
+}
+
+.section-container-footer {
+    background-color: #F5F3ED;
+    color: #1b1b1b; 
+}
+
+.section-container-white {
+    background-color: #ffffff;
+    color: #1b1b1b; 
+}
+
+.section-container-orange {
+    background-color: #FF6C0C;
+    color: #1b1b1b; 
+}
+
+.section-container-gray100 {
+    background-color: #f8f8f8;
+    color: #575757; 
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+a.cta-link {
+    text-decoration: none;
+}
+
+button.cta-template {
+    /* margin-top: 2rem; */
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFED00;
+    transition: all 200ms ease;
+}
+
+button.cta-template:hover {
+    color: #1b1b1b;
+    background-color: #fcca00 ;
+}
+
+button.cta-template.orange-bg {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+
+button.cta-template.orange-bg:hover {
+    color: #1b1b1b;
+    background-color: #fceb00 ;
+}
+
+button.cta-template.secondary {
+    margin-top: 0;
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    transition: all 200ms ease;
+}
+
+button.cta-template.secondary:hover {
+    color: #1b1b1b;
+    background-color: #fceb00;
+}
+
+button.cta-template.tertiary {
+    margin-top: 0;
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    font-weight: 800;
+    color: #1b1b1b;
+    background-color: #fceb00;
+    transition: all 200ms ease;
+}
+
+button.cta-template.tertiary:hover {
+    color: #ffffff;
+    background-color: #FF6C0C;
+}
+
+button.secondary-nav {
+    margin-top: 1rem;
+    padding: 0.7rem 0;
+    width: min(100%, 15rem);
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+
+button.secondary-nav:hover {
+    background-color: #1b1b1b;
+}
+
+button.secondary {
+    margin-top: 0;
+    padding: 0.75rem 0.5rem;
+    width: min(100%, 21rem);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    /* border: 2px solid #FF6C0C; */
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+/* Utility Classes | END */
+
+
+
+/* MAIN STYLES */
+
+/* Header section | START */
+.lease-event-header-container {
+    position: relative;
+    height: 800px;
+    /* display: flex; */
+    justify-content: center;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/next-level-hero-img-01-mobile.jpg?v=1727899301);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* .lease-event-header-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+} */
+
+.lease-event-header-container > * {
+    position: relative;
+    z-index: 10;
+}
+
+.lease-event-header-container {
+    margin: 0;
+    padding: 0 0 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.lease-event-header-container .content-container {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 20;
+}
+
+.lease-event-header-container .secondary-content {
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
+
+.lease-event-header-container .img-container {
+    padding: 0 1rem;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+
+.lease-event-header-container img.liftow-logo  {
+    max-width: 300px;
+}
+
+.header-content-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.header-content-container p {
+    font-size: 1rem;
+    line-height: 160%
+}
+
+.lease-event-header-container .secondary-content p {
+    font-size: 0.9rem;
+    line-height: 120%
+}
+
+
+.lease-event-header-container .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #FF6C0C;
+    opacity: 0.85;
+}
+
+
+.lease-event-header-container .header-content-container img.cta-desktop {
+    width: min(100%, 500px);
+}
+
+@media (min-width: 30rem) {
+    .lease-event-header-container {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 40rem) {
+    .lease-event-header-container {
+        background-position: top -200px right 0px;
+    }
+}
+
+@media (min-width: 50rem) {
+    .lease-event-header-container {
+        background-position: top -500px right 0px;
+    }
+}
+
+@media (min-width: 60rem) {
+    .lease-event-header-container {
+        background-position: top -700px right 0px;
+    }
+}
+
+@media (min-width: 75rem) {
+    .lease-event-header-container {
+        height: auto;
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/next-level-hero-img-01-desktop.jpg?v=1727899301);
+        background-position: top;
+    }
+    
+    .lease-event-header-container .content-container {
+        margin-bottom: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .lease-event-header-container .img-container {
+        justify-content: start;
+    }
+ 
+    .header-content-container p {
+        padding-right: 50%;
+    }
+}
+
+button.cta-template.mobile {
+    margin-bottom: 2rem;
+}
+
+/* Header section | END */
+
+
+/* Form | START */
+.form-content-container.content-container {
+    padding: 0 0.5rem;
+}
+
+.action-contact-form {
+    margin: 0 auto 2rem auto;
+    padding: 2.5rem 1rem;
+    width: min(100%, 75rem);
+    position: relative;
+    z-index: 500;
+    top: -2rem;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, .2);
+}
+
+.action-contact-form h2 {
+    margin: 1rem auto 3rem auto;
+    width: min(100%, 900px);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #77777a;
+}
+
+.action-contact-form h2 .percentage {
+    font-size: 2.5rem;
+    position: relative;
+    top: -0.6rem;
+}
+
+.action-contact-form h2 .asterisk {
+    position: relative;
+    top:-2rem;
+    left: 0.08rem;
+    font-size: 1.3rem;
+}
+
+.action-contact-form h3 {
+    margin: 0 0 2.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 90%;
+    color: #77777A;
+}
+
+.action-contact-form p.note {
+    margin: 2rem auto 0 auto;
+    width: min(100%, 900px);
+    font-size: 0.8rem;
+    color: #77777A
+}
+
+@media (min-width: 45rem) {
+    
+    /* .action-contact-form h3 {
+        font-size: 2rem;
+        line-height: 90%;
+    } */
+    
+}
+
+@media (min-width: 75rem) {
+    .action-contact-form {
+        padding: 2.5rem 2rem;
+        top: -4rem;
+    }
+
+    .action-contact-form form .form-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+
+
+.action-contact-form button {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #FF6C0C;
+}
+
+/* Form | END */
+
+
+
+
+
+
+/* Promo Supporting Copy | START */
+section.promo-supporting-copy {
+    /* border: 1px solid red; */
+    margin-top: -2rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.promo-supporting-copy-content-container img.prod-lineup {
+    margin-bottom: 2rem;
+    width: min(100%, 900px);
+}
+
+.promo-supporting-copy-content-container .promo-bullet-container {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.promo-supporting-copy-content-container .promo-bullet {
+    margin-bottom: 1.5rem;
+}
+
+.promo-supporting-copy-content-container .promo-bullet p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #77777A;
+}
+
+@media (min-width: 50rem) {
+
+    .promo-supporting-copy-content-container .promo-bullet {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .promo-supporting-copy-content-container .promo-bullet .checkmark-promo {
+        position: relative;
+        top: -3px;
+    }
+
+}
+
+/* Promo Supporting Copy | END */
+
+
+
+/* Tables | START */
+.tables-container  {
+    margin: 1rem auto 0 auto;
+    /* padding: 0 0.5rem; */
+    width: min(100%, 45rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.tables-container table th:nth-child(1),
+.tables-container table th:nth-child(2) {
+    width: 50%;
+}
+
+.table-01,
+.table-02,
+.table-03 {
+    width: 100%;
+    /* border: 1px solid red; */
+    border-collapse: collapse;
+}
+
+.tables-container .heading th {
+    padding: 0.4rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    border: 1px solid #FF6C0C;
+    background-color: #FF6C0C;
+}
+
+.tables-container .subheading th {
+    padding: 0.4rem 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #1b1b1b;
+    border: 1px solid #FFDEC6;
+    background-color: #FFDEC6;
+}
+
+.tables-container td {
+    padding: 0.6rem 1.5rem;
+    /* width: 33.33%; */
+    border: 1px solid #c8c8c8;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #77777A;
+    /* background-color: #ffffff; */
+}
+
+.tables-container tr:nth-child(even){
+    background-color: #ffffff;
+}
+
+.tables-container tr:nth-child(odd){
+    background-color:  #f1f1f1;
+}
+
+@media (min-width: 65rem) {
+    .tables-container {
+
+        width: min(100%, 75rem);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+/* Tables | END */
+
+
+/* Supporting Copy 02 | START */
+.benefits-container {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.benefits-container .header {
+    margin: 0 auto 2rem auto;
+    width: min(100%, 55rem);
+}
+
+ .benefits-container h3 {
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.69rem;
+    font-weight: 800;
+    line-height: 100%;
+    color: #77777A;
+}
+
+ .benefits-container p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #77777A;
+}
+
+.benefits-container .icon-main-container {
+    margin: 0 auto;
+    width: min(100%, 700px);
+}
+
+.benefits-container .icon-main-container h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 100%;
+    color: #77777A;
+}
+
+.benefits-container .img-applications-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.benefits-container .img-applications-container img {
+    height: 100px;
+}
+
+.benefits-container .img-applications-container p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media (min-width: 37.5rem) {
+    .benefits-container .icon-main-container {
+        width: min(100%, 600px);
+    }
+
+    .benefits-container .img-applications-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+
+@media (min-width: 55rem) { 
+
+    .benefits-container h2 {
+        font-size: 2.68rem;
+    }
+
+    .benefits-container .icon-main-container {
+        width: min(100%, 700px);
+    }
+
+    .benefits-container .img-applications-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+}
+/* Supporting Copy 02 | END */
+
+
+/* CTA 02 | START */
+
+.lease-event-footer-container {
+    position: relative;
+    height: 800px;
+    /* display: flex; */
+    justify-content: center;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/next-level-hero-img-01-mobile.jpg?v=1727899301);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* .lease-event-footer-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+} */
+
+.lease-event-footer-container > * {
+    position: relative;
+    z-index: 10;
+}
+
+.lease-event-footer-container {
+    margin: 2rem 0 0 0;
+    padding: 0 0 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.lease-event-footer-container .content-container {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 20;
+}
+
+.lease-event-footer-container .secondary-content {
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
+
+.lease-event-footer-container .img-container {
+    padding: 0 1rem;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+
+.lease-event-footer-container img.liftow-logo  {
+    max-width: 300px;
+}
+
+.header-content-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.header-content-container p {
+    font-size: 1rem;
+    line-height: 160%
+}
+
+.lease-event-footer-container .secondary-content p {
+    font-size: 0.9rem;
+    line-height: 120%
+}
+
+
+.lease-event-footer-container .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #FF6C0C;
+    opacity: 0.85;
+}
+
+
+.lease-event-footer-container .header-content-container img.cta-desktop {
+    width: min(100%, 500px);
+}
+
+@media (min-width: 30rem) {
+    .lease-event-footer-container {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 40rem) {
+    .lease-event-footer-container {
+        background-position: top -200px right 0px;
+    }
+}
+
+@media (min-width: 50rem) {
+    .lease-event-footer-container {
+        background-position: top -500px right 0px;
+    }
+}
+
+@media (min-width: 60rem) {
+    .lease-event-footer-container {
+        background-position: top -700px right 0px;
+    }
+}
+
+@media (min-width: 75rem) {
+    .lease-event-footer-container {
+        height: auto;
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/next-level-hero-img-01-desktop.jpg?v=1727899301);
+        background-position: top;
+    }
+    
+    .lease-event-footer-container .content-container {
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .lease-event-footer-container .img-container {
+        justify-content: start;
+    }
+ 
+    .header-content-container p {
+        padding-right: 50%;
+    }
+}
+
+button.cta-template.mobile {
+    margin-bottom: 2rem;
+}
+/* CTA 02 | END */
+
+
+
+
+
+/* Footer | Condensed section | START */
+.footer-Q32024-ti-tu-landing-page .content-container-footer {
+    margin-bottom: 0;
+    padding: 3.5rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.footer-content-top img.liftow-logo  {
+    width: 250px;
+}
+
+
+.social-icon-container {
+    margin-bottom: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icon-container img {
+    height: 25px;
+}
+
+.liftow-legal {
+    color: #77777A;
+}
+
+@media (min-width: 75rem) {
+    .footer-Q32024-ti-tu-landing-page .footer-content-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content-top img.liftow-logo  {
+        width: 400px;
+    }
+
+    .social-icon-container {
+        margin-bottom: 0;
+        align-items: center;
+    }
+}
+/* Footer | Condensed section | END */
